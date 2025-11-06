@@ -1,21 +1,52 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hi, I'm Xander Whitby</title>
 
     <link rel="stylesheet" href="styles.css">
+    <style>
+      body {
+        background-color: #1a1a1a;
+        color: #e0e0e0;
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        padding: 20px;
+      }
 
+      h2 {
+        color: #5fd7ff;
+        margin-top: 20px;
+      }
+
+      p {
+        margin: 10px 0;
+      }
+
+      #xanderDemo {
+        font-weight: bold;
+        color: #ffb347;
+      }
+    </style>
   </head>
   <body>
-    <script>
-      document.getElementId("xanderDemo").innerHtml = "Hiiii Guys";
-    </script>
-    <h2>Background</h2>
-      <p>I am from Jerome, Idaho. I have been married for almost 2 1/2 years. I am studying cyber security with a minor in CS. I am the oldest brother of three boys. </p>
-    <h2>Hobbies</h2>
-     <p>I enjoy anything with computers. I use arch btw... In my free time, I do lots of ctf's on hackerone and hack the box. One of my projects I am most exited about is programming in C is a ps1 emulator. This will be ran on my raspberry pi and with an ESP32 I am programming a remote control to play games via a breadboard.</p>
-  </body>
+    <h1 id="xanderDemo">Welcome!</h1>
 
+    <h2>Background</h2>
+    <p>
+      I am from Jerome, Idaho. I have been married for almost 2 1/2 years. I am studying cyber security with a minor in CS. I am the oldest brother of three boys.
+    </p>
+
+    <h2>Hobbies</h2>
+    <p>
+      I enjoy anything with computers. I use Arch btw... In my free time, I do lots of CTFs on HackerOne and Hack The Box. One of my projects I am most excited about is programming a PS1 emulator in C. This will run on my Raspberry Pi, and with an ESP32 I am programming a remote control to play games via a breadboard.
+    </p>
+
+    <script>
+      document.getElementById("xanderDemo").innerHTML = "Hiiii Guys";
+    </script>
+  </body>
 </html>
+
